@@ -2,7 +2,7 @@
 
 一款为 **iOS 26** 打造的 SwiftUI 应用：笔记记录 + 待办事项（提醒 / 长期任务 / 重复 / 优先级），界面充满动效。使用 **GitHub Actions 云端编译**，无需 Mac 也能产出 IPA。
 
-![Build](https://github.com/OWNER/NoteWrite/actions/workflows/build.yml/badge.svg)
+![Build](https://github.com/Azyne736/NoteWrite/actions/workflows/build.yml/badge.svg)
 
 ## ✨ 功能
 

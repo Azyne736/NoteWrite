@@ -21,10 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select latest stable Xcode
-        uses: maxim-lobanov/setup-xcode-action@v1
-        with:
-          xcode-version: latest-stable
+      - name: Select newest Xcode
+        run: |
+          XCODE_PATH=$(ls -d /Applications/Xcode*.app | sort -V | tail -1)
+          echo "Using $XCODE_PATH"
+          sudo xcode-select -s "$XCODE_PATH"
 
       - name: Show toolchain
         run: |

@@ -14,7 +14,7 @@ struct SettingsView: View {
     @State private var showClearConfirm = false
     @State private var showWipeConfirm = false
 
-    private let repoURL = "https://github.com"
+    private let repoURL = "https://github.com/Azyne736/NoteWrite"
 
     private var appVersion: String {
         (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "1.0.0"
