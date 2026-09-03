@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+
+# Xcode (工程由 xcodegen 生成，不入库)
+*.xcodeproj
+xcuserdata/
+DerivedData/
+build/
+
+# 本地产物
+dist/
+
+# Python
+__pycache__/
+*.pyc

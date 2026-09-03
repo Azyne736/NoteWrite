@@ -1,0 +1,40 @@
+name: NoteWrite
+options:
+  bundleIdPrefix: com.zcode
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+targets:
+  NoteWrite:
+    type: application
+    platform: iOS
+    sources:
+      - path: NoteWrite
+    settings:
+      base:
+        PRODUCT_NAME: NoteWrite
+        PRODUCT_BUNDLE_IDENTIFIER: com.zcode.notewrite
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: NoteWrite/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+schemes:
+  NoteWrite:
+    build:
+      targets:
+        NoteWrite: all
+    run:
+      config: Debug
+    archive:
+      config: Release
